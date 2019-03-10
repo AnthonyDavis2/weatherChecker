@@ -1,0 +1,101 @@
+<html>
+<head>
+  <title>Weather Checker</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+    <style>
+    body {
+      background-image: url("weatherbg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 40px;
+    }
+  #frame {
+    margin-top: 15%;
+    margin-bottom: 3%;
+
+    text-align: center;
+}
+  #input {
+    box-shadow: 2px 2px 2px 2px black;
+    background-color: rgb(255,255,255);
+    height: 5%;
+    width: 25%
+  }
+  #btn {
+    width: 8%;
+    height: 3%;
+    margin: 15px;
+}
+  #weather { 
+    color: firebrick;
+      float: left; 
+    margin-top: 5px;
+    width: 63%;
+    height: 50%;
+/*    border: 5px solid black;*/
+  }
+        #weather2 {
+            overflow: auto;
+            float: right; 
+    margin-top: 5px;
+    width: 33%;
+    height: 50%;
+/*    border: 5px solid black;*/
+  }
+        
+        .days { 
+            color: firebrick; 
+            background-position: center; 
+            background-size: cover; 
+            width: 100%; 
+            height: 50%; 
+/*            border: 2px solid black; */
+        }
+        
+  #sig {
+      position: fixed; 
+      bottom: 0; 
+    margin-top: 5px;
+    font-size: 13px;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+    
+  </style>
+</head>
+<body id="body">
+
+    <div id="frame">
+      <div id="info">
+      <h1>What's the weather like?</h1>
+
+      <input type="text" placeholder="Enter city name or zip code" name="location" id="input">
+      <br>
+      <button id="btn" ><strong>CHECK</strong></button>
+      </div>
+      <br>
+        
+      <div id="weather">
+          
+          
+      </div>
+        
+    <div id="weather2">
+        <div id="day2" class="days"></div>
+        <div id="day3" class="days"></div>
+        <div id="day4" class="days"></div>
+        <div id="day5" class="days"></div>
+    </div>
+      <br>
+      <div id="sig"><p>Anthony Davis Product</p></div>
+    </div>
+<script src="middleJS.js"></script>
+</body>
+</html>
